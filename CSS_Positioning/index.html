@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relativePos{
+            position: relative;
+            /* width:400px; */
+            /* height:auto */
+            /* background-color:rgb(229, 229, 229); */
+            /* width: 400px; */
+            /* height: 300px; */
+            height: auto;
+            /* border: 1px solid #c8c8c8; */
+            top:0px;
+            left:100px;
+            /* +\margin: 20px auto; */
+
+
+        }
+        .absolutePos{
+            position: absolute;
+        }
+        .navimg{
+            top:50%;
+            left: 50%;
+            transform: translateY(-50%);
+            transform: translateX(-50%);
+            position: absolute;
+        }
+        .cloud{   
+            position: relative;
+            left: 20%;
+            /* float:right; */
+        }
+        .parag{
+            position: relative;
+            left:20%
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="relativePos">
+            <img src="logo.PNG">
+            <img class="navimg" src="nav.PNG"> 
+        </div>
+
+
+            
+            <div class="relativePos"> 
+                <img class="parag" src="para.PNG">
+                <img class="cloud" src="pic.PNG">
+                
+            </div>        
+
+            <div class="relativePos">    
+                <img width="100%" src="end.PNG">
+            </div>
+        
+        
+    </div>
+</body>
+</html>
